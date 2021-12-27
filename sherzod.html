@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sherzod`s Scoring System</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="scss/sherzod.css">
+</head>
+<body>
+    <div class="ml-5 mr-5">
+
+        <div class="d-flex justify-content-between">
+            <h2 class="mt-5 text-success">TABLE</h2>
+            <button type="button" class="btn btn-success mt-5 mb-2 score" data-toggle="modal" data-target="#staticBackdrop" >
+                Score
+            </button>
+        </div>
+
+        <table class="table table-striped table-dark">
+            <thead>
+                <tr>
+                    <th scope="col">№</th>
+                    <th scope="col">1<sup>st</sup> event</th>
+                    <th scope="col">2<sup>nd</sup> event</th>
+                    <th scope="col">3<sup>rd</sup> event</th>
+                    <th scope="col">4<sup>th</sup> event</th>
+                    <th scope="col">5<sup>th</sup> event</th>
+                    <th scope="col">Overall</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+
+        <div class="d-flex justify-content-between min-max">
+            <div class="min col-5 bg-success">
+                <p class="mt-3">Minimum Score: <b class="myOverallMin badge badge-light"></b></p>
+            </div>
+            <div class="max col-5 bg-success">
+                <p class="mt-3">Maximum Score: <b class="myOverallMax badge badge-light"></b></p>
+            </div>
+        </div>
+    </div>
+
+<!-- Modal -->
+
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Score for Group №<b class="numberGroup"></b></h5>
+            <button type="button" class="close" data-dismiss="modal" >
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+
+            <div class="modal-body d-flex justify-content-between flex-wrap ">
+                <p style="color: #dd1616; font-weight: bolder;">You can score from 0 to 10.</p>
+                <div class="d-flex justify-content-between mt-2">
+                    <p class="col-6">1 <sup>st</sup> event</p>
+                    <input type="number" class="form-control col-6 score1 allScore" placeholder="Enter the score">
+                </div>
+                <div class="d-flex justify-content-between mt-2">
+                    <p class="col-6">2<sup>nd</sup> event</p>
+                    <input type="number" class="form-control col-6 score2 allScore" placeholder="Enter the score">
+                </div>
+                <div class="d-flex justify-content-between mt-2">
+                    <p class="col-6">3 <sup>rd</sup> event</p>
+                    <input type="number" class="form-control col-6 score3 allScore" placeholder="Enter the score">
+                </div>
+                <div class="d-flex justify-content-between mt-2">
+                    <p class="col-6">4 <sup>th</sup> event</p>
+                    <input type="number" class="form-control col-6 score4 allScore" placeholder="Enter the score">
+                </div>
+                <div class="d-flex justify-content-between mt-2">
+                    <p class="col-6">5 <sup>th</sup> event</p>
+                    <input type="number" class="form-control col-6 score5 allScore" placeholder="Enter the score">
+                </div>
+            </div>
+            <div class="modal-footer">
+                
+            <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+            <button id="save" type="button" class="btn btn-success w-100 hoverBtn">Save</button>
+
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+<script src="js/jquery-3.3.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="sherzod.js"></script>
+</html>

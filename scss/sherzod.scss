@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:ital,wght@0,200;0,400;1,200&display=swap");
+h2 {
+    color: #343a40;
+    font-weight: bold;
+}
+body {
+    background: hsla(120, 74%, 67%, 0.856);
+    font-family: "Fredoka One", cursive;
+    font-family: "Poppins", sans-serif;
+}
+
+.hoverBtn:hover {
+    background: hsl(60, 100%, 50%);
+}
+.score:hover {
+    background: hsl(60, 100%, 50%);
+    color: #000;
+    transition: 0.7s;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.356);
+}
+.score {
+    // background: #343a40;
+    color:#fff;
+    }
+tr {
+    border-radius: 10px;
+    margin: 2px;
+}
+.min-max {
+    .min {
+            border-radius: 10px;
+    }
+    .max {
+            border-radius: 10px;
+    }
+    p {
+            font-size: 30px;
+            color: #fff;
+    }
+}
